@@ -13,7 +13,9 @@ class Screen3 extends StatelessWidget {
             child: RaisedButton(
               child: Text('Screen 3'),
               onPressed: (){
-                Navigator.pop(context);
+                // Navigator.pop(context);
+                Navigator.of(context).pushNamedAndRemoveUntil
+                ('/screen1', (Route<dynamic> route) => false);
               },
             ),
           ),
