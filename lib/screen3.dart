@@ -13,9 +13,7 @@ class Screen3 extends StatelessWidget {
             child: RaisedButton(
               child: Text('Screen 3'),
               onPressed: (){
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context) => Screen1()
-                ));
+                Navigator.pop(context);
               },
             ),
           ),
