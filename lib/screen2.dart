@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:list_app/model/student.dart';
 
 class Screen2 extends StatefulWidget {
-  final String objectPassed;
+  final Student objectPassed;
   Screen2({Key key, this.objectPassed}): super(key: key);
 
   @override
@@ -18,7 +19,7 @@ class _Screen2State extends State<Screen2> {
       body: Center(
         child: Column(
           children: <Widget>[
-            Text('${widget.objectPassed}'),
+            Text('${widget.objectPassed.nama} ${widget.objectPassed.age}'),
             RaisedButton(
               child: Text('Screen 3'),
               onPressed: () {

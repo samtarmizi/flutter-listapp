@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:list_app/screen1.dart';
   
 class Screen3 extends StatelessWidget {
   @override
