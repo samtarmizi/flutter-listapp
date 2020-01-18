@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:list_app/screen1.dart';
   
 class Screen3 extends StatelessWidget {
   @override
@@ -10,9 +11,11 @@ class Screen3 extends StatelessWidget {
         body: Center(
           child: Container(
             child: RaisedButton(
-              child: Text('Screen 2'),
+              child: Text('Screen 3'),
               onPressed: (){
-                
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => Screen1()
+                ));
               },
             ),
           ),
